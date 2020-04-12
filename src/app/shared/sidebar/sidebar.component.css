@@ -1,0 +1,134 @@
+.uploaderSidebarwrap
+{
+    float: left;
+    width: 18%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    top: 0px;
+    z-index: 100;
+}
+
+.headerSideWrap{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+}
+.iconWrapHeaderSideBar {
+    float: left;
+    width: 100%;
+}
+.imageWrapMain {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 12px;
+}
+.imageWrapMain img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.welcomeWrapHeaderSideBar {
+    float: left;
+    width: 100%;
+}
+.welcomeWrapMain{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.changeCityHeaderWrap {
+    float: left;
+    width: 100%;
+}
+.cityChangeWrap {
+    text-align: center;
+    width: 51%;
+    color: white;
+    background: orange;
+    padding: 3px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 13px;
+    border: 1px solid orange;
+    border-radius: 21px;
+}
+.cityChangeWrap:hover {
+    cursor: pointer;
+}
+.cityChangeWrap i{
+    color: yellow;
+    font-size: 16px;
+    padding-left: 3px;
+}
+.forClosingWrap {
+    border-right: 1px solid gray;
+    width: 82%;
+    position: fixed;
+    bottom: 0;
+    margin-left: 18%;
+    background: white;
+    top: 0px;
+    z-index: 100;
+    /* height: 100vh; */
+    background: #0000004d;
+}
+.listwrap
+{
+    float: left;
+    width: 100%;
+    padding-left: 0px !important;
+    list-style: none;
+}
+.listwrap a{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.39);
+}
+.listwrap a li
+{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    padding: 15px 20px;
+    color: #000000;
+    outline: none;
+}
+.listwrap li i{
+    width: 15%;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.fa-lg {
+    font-size: 1.1em!important;
+}
+.listwrap a li:hover {
+    cursor: pointer;
+    text-decoration: none;
+background: #c7c7c717;
+    color: #1277bd;
+    outline: none;
+}
+.active{
+    background: #c7c7c717 !important;
+    color: #1277bd !important;
+    outline: none !important;
+    border-bottom: 1px solid #8080800d;
+}
+
+
+@media screen and (max-width: 800px) {
+    .uploaderSidebarwrap {
+        width: 67%;
+    }
+    .forClosingWrap {
+        margin-left: 67%;
+        width: 33%;
+    }
+}

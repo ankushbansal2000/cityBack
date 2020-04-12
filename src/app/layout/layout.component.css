@@ -1,0 +1,14 @@
+.sidebar {
+    float: left;
+    width: 100%;
+
+animation-name: example;
+animation-duration: .31s;  
+animation-fill-mode: forwards;
+position: relative;
+}
+
+@keyframes example {
+    from {left: -10px; background-color: yellow;}
+    to {left: 0px;}
+  }

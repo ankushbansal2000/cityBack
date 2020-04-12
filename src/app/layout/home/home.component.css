@@ -1,0 +1,138 @@
+.mainWrap {
+    float: left;
+    width: 100%;
+}
+.headerWrap {
+    float: left;
+    width: 100%;
+    background-color: black;
+    padding: 10px 20px;
+
+}
+.headerParaWrap {
+    float: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    width: 80%;
+}
+.cityNameWrap {
+    float: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    width: 20%;
+}
+.bodyWrapContainer{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    min-height: 90vh;
+    background-color: #f1f1f1c2;
+}
+.cardWrap {
+    float: left;
+    width: 18%;
+    box-shadow: 0px 0px 3px 2px #80808024;
+    text-align: center;
+    border-radius: 6px;
+    margin: 5px 10px;
+}
+.card:hover {
+    cursor: pointer;
+    background-color: #80808014;
+}
+.card {
+    padding: 10px;
+}
+.imageWrap {
+    float: left;
+    width: 100%;
+    padding: 23px 40px;
+    height: 125px;
+}
+.imageWrap img {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.titleWrap {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+}
+
+.NoDataFoundWrap{
+float: left;
+width: 100%;
+color: red;
+}
+
+.paraWrapAccept {
+    float: left;
+    width: 100%;
+}
+.imageWrapNotFound {
+    float: left;
+    width: 100%;
+    margin-top: 15%
+}
+.imageWrapForServiceNotFound {
+    margin: auto;
+    width: 15%;
+}
+
+.imageWrapForServiceNotFound img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.recievedSerivceWrapNotFound {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 600;
+}
+.paraWrapForContactSoon {
+    float: left;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+.bodyWrapContainer {
+    padding: 3px;
+}
+.headerParaWrap {
+    width: 100%;
+    font-size: 16px;
+}
+.cityNameWrap {
+    width: 50%;
+    font-size: 12px;
+    font-weight: 400px;
+}
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+.cardWrap {
+    width: 46%;
+    margin: 5px 5px;
+}
+.imageWrap {
+    height: 100px;
+}
+.imageWrapForServiceNotFound {
+    width: 40%;
+}
+.imageWrapNotFound {
+    margin-top: 38%;
+}
+
+
+}

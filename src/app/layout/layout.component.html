@@ -1,0 +1,10 @@
+<app-header (openSideBar)="updateSideBar($event)"></app-header>
+<div class="sidebar" *ngIf="isSideBar">
+<app-sidebar (closeSideBar)="updateSideBar($event)"></app-sidebar>
+</div>
+<div class="mainWrap">
+<router-outlet></router-outlet>
+</div>
+<div class="mainWrap" *ngIf="!isCitySelect">
+<app-city (citySelect)="updateSideBar($event)" [changeCity]="input"></app-city>
+</div>

@@ -1,0 +1,87 @@
+.modal-dialog {
+    max-width: 50%;
+    max-height: 500px;
+    margin: 0px auto;
+    position: relative;
+    top: 130px;
+  }
+
+  .summaryPosition{
+    color:#106CD1 !important; cursor: pointer;
+  }
+  .modal {
+    
+    background-color: #00000038;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 700;
+     display: none;
+    overflow-y: scroll;
+    outline: 0;
+    background-image: url('../../../assets/background.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+.mainWrap {
+    float: left;
+    width: 100%;
+}
+.headerWrap {
+    float: left;
+    width: 100%;  
+    border-bottom: 1px solid black;
+    padding: 10px 20px;
+}
+.headerParaWrap {
+    float: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+}
+.bodyWrapContainer{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+.cardWrap {
+    float: left;
+    width: 30%;
+    box-shadow: 0px 0px 3px 2px #80808024;
+    text-align: center;
+    border-radius: 6px;
+    margin: 5px;
+}
+.card:hover {
+    cursor: pointer;
+    background-color: #80808014;
+}
+.card {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .modal-dialog {
+        max-width: 100%;
+        top: 0px;
+    }
+    .cardWrap {
+        width: 100%;
+        text-align: left;
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .bodyWrapContainer {
+        padding: 0px;
+    }
+    .headerWrap {
+        background-color: black;
+    }
+    .headerParaWrap {
+        color: white;
+    }
+}

@@ -1,0 +1,48 @@
+<div class="headerWrap">
+
+    <div class="cityNameWrap">
+        <div class="IconTag" (click)="goBack()">
+            <i class="fa fa-arrow-left fa-lg" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="headerParaWrap">
+        {{categoryName}}
+    </div>
+</div>
+<div class="mainWrap">
+    <div class="container">
+        <form #serviceDetail="ngForm" (ngSubmit)="save(serviceDetail)">
+    <div class="rowWrap">
+            <mat-form-field floatLabel="always" class="InputWrapMat">
+                    <mat-label>Full Name</mat-label>
+                    <input matInput [formControl]="name" required  name="name">  
+                    <mat-error *ngIf="name.invalid">Please Enter Name</mat-error>
+                </mat-form-field>
+                          
+    </div>
+
+    <div class="rowWrap">
+        <div class="countryCode">
+                <mat-form-field floatLabel="always" class="InputWrapMat">
+                        <input matInput type="text" [(ngModel)]="countryValue"  name="countryValue" class="countryInput">
+                </mat-form-field>
+        </div>
+        <div class="mobileNumberWrap">
+            <mat-form-field floatLabel="always" class="InputWrapMat"> 
+                    <mat-label>Mobile Number</mat-label>
+                               <input matInput type="number" name="mobile" 
+                                [formControl]="mobile" required>
+                               <mat-error *ngIf="mobile.invalid">Please Enter Mobile Number of 10 digits</mat-error>
+                      </mat-form-field>
+            </div>
+    </div>
+
+    <div class="buttonWrap">
+        <div class="buttonDiv">
+        <button class="btnWrap" [disabled]="!serviceDetail.form.valid" type="submit" >SUBMIT</button>
+    </div>
+    </div>
+</form>
+</div>
+</div>
+<app-service-recieved *ngIf="ifServiceRecieved"></app-service-recieved>

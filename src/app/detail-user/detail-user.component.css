@@ -1,0 +1,124 @@
+.headerWrap {
+    float: left;
+    width: 100%;
+    background-color: black;
+    padding: 10px 20px;
+
+}
+.headerParaWrap {
+    float: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    width: 80%;
+}
+.IconTag {
+    float: left;
+    width: 10%;
+}
+.cityNameWrap {
+    float: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    width: 5%;
+}
+.btnWrap{
+    background-color: white;
+    float: left;
+    color: #000000;
+    font-size: 13px;
+    width: 100%;
+    border: 2px solid orange;
+    padding: 8px 25px;
+}
+.inputWrap {
+    float: left;
+    width: 100%;
+
+}
+.fa-lg {
+    font-size: 1.3em!important;
+}
+ .cityNameWrap i{
+    width: 15%;
+    padding-right: 20px;
+}
+
+.mainWrap {
+    float: left;
+    width: 100%;
+    padding: 130px 10px;
+    background-color: #f1f1f1b8;
+    min-height: 91vh;
+}
+.rowWrap {
+    float: left;
+    padding: 10px;
+    width: 28%;
+    margin-left: 36%;
+}
+.buttonWrap{
+    float: left;
+    width: 100%;
+    padding: 0px 10px;
+}
+.buttonDiv {
+    width: 28%;
+    margin: auto;
+}
+.validation {
+    float: left;
+    width: 100%;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+.InputWrapMat {
+    width: 100%;
+   font-size: 15px;
+}
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple{
+    background-color: orange !important;
+  }
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #000000 !important;
+  }
+  .countryCode {
+      width: 17%;
+      float: left;
+  }
+  .mobileNumberWrap {
+      width: 80%;
+      float: left;
+      margin-left: 3%;
+  }
+  .countryInput {
+      padding: 0px 10px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+@media screen and (max-width: 800px) {
+  .headerWrap {
+      padding: 15px;
+  }
+    .rowWrap{
+        padding: 10px 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .buttonDiv {
+        width: 100%;
+    }
+    .cityNameWrap {
+        width: 15%;
+    }
+    .buttonWrap {
+        padding: 0px;
+    }
+}

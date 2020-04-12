@@ -1,0 +1,96 @@
+.modal {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+  }
+.mainWrap {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    margin: auto;
+    bottom: 0px;
+    left: 0;
+    z-index: 700;
+    background-image: url('../../assets/background.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.exitWrap {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+ .exitWrap i{
+    width: 9%; 
+    font-size: 2.3em!important;
+    color: white;
+}
+.exitWrap i:hover{
+    cursor: pointer;
+ }
+.paraWrapAccept {
+    float: left;
+    width: 100%;
+    margin-top: 10%;
+}
+.imageWrap {
+    float: left;
+    width: 100%;
+}
+.imageWrapForService {
+    margin: auto;
+    width: 10%;
+}
+
+.imageWrapForService img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.recievedSerivceWrap {
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+}
+.paraWrapForContactSoon {
+    float: left;
+    width: 100%;
+}
+.contactSoonWrap {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+@media screen and (max-width: 800px) {
+.mainWrap {
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+.paraWrapAccept{
+    margin-top: 35%;
+}
+.imageWrapForService {
+    width: 30%;
+}
+
+
+}

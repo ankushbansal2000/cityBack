@@ -1,0 +1,39 @@
+<div class="mainWrap">
+    <!--   <div class="headerWrap">
+            <div class="headerParaWrap">
+                City App
+            </div>
+            <div class="cityNameWrap">
+                {{cityName}}
+            </div>
+        </div>
+        -->
+    <div class="bodyWrapContainer" *ngIf="!noData"> 
+        <div class="container">
+            <div class="cardWrap" *ngFor="let category of masterList">
+                <div class="card" (click)="selectCategory(category.title, category.id)">
+                    <div class="imageWrap">
+                        <img src="{{category.iconUrl}}">
+                    </div>
+                    <div class="titleWrap">
+                        {{category.title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="NoDataFoundWrap" *ngIf="noData">
+        <div class="container">
+            <div class="paraWrapAccept">
+                <div class="imageWrapNotFound">
+                    <div class="imageWrapForServiceNotFound">
+                        <img src="../../../assets/notFoundClear.png">
+                    </div>
+                </div>
+                <div class="recievedSerivceWrapNotFound">
+                    No Data Found !
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

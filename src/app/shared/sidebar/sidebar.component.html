@@ -1,0 +1,36 @@
+<div class="uploaderSidebarwrap">
+    <div class="headerSideWrap">
+        <div class="iconWrapHeaderSideBar">
+            <div class="imageWrapMain">
+                <img src="../../../assets/LogoSideBar.jpeg">
+            </div>
+        </div>
+        <div class="welcomeWrapHeaderSideBar">
+            <div class="welcomeWrapMain">
+                Welcome Guest
+            </div>
+        </div>
+        <div class="changeCityHeaderWrap">
+            <div class="cityChangeWrap" (click)="onChangeCity()">
+                {{cityName}}
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <ul class="listwrap" (click)="isCloseSideBar()">
+        <a>
+            <li (click)="selectedItem(1)"  [routerLink]="[ '/home'] " [ngClass]="1 === activeElement ? 'active' : 'none'">
+                    <i class="fa fa-home" aria-hidden="true"></i>Home
+            </li>
+        </a>
+
+        <a>
+            <li (click)="selectedItem(4)"  [routerLink]="[ '/request-history'] " [ngClass]="4 === activeElement ? 'active' : 'none'">
+                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>Request History
+            </li>
+        </a>
+    </ul>
+</div>
+<div class="forClosingWrap" (click)="isCloseSideBar()">
+
+</div>
